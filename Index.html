@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JavaScrript.js"></script>
+    <style>
+        h1{
+            color: purple;
+        }
+        p{
+            display: flex;
+            background-color: #00ff95;
+            border-radius: 8px;
+            width: 75%;
+        }
+    </style>
     <title>Estudos em JavaScript</title>
 </head>
 <body>
+    <h1>Estudos em JavaScript</h1>
+    <p>Tal "Pagina" é a penas um teste para um estudo pessoal da linguagem JavaScript</p>
     <script>
         //Script em JavaScript
         function soma(numero, numero2){
             var resultado = numero + numero2;
             return Math.pow(resultado*Math.PI,2);
         }
-
 
         var resultado = soma(1,2);
         console.log(resultado);
