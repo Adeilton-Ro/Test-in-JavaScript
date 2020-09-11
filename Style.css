@@ -1,0 +1,34 @@
+#app ul{
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(121, 117, 117);
+}
+
+div#app ul a{
+    transition: 0.3s;
+
+    margin-left: 10px;
+}
+
+div#app ul a:hover{
+    color: red;
+}
