@@ -1,5 +1,5 @@
 var listElement = document.querySelector('#app ul');
-var inputElement = document.querySelector('#app input').value;
+var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
@@ -31,8 +31,7 @@ function renderTodos(){
 renderTodos();
 
 function addTodo(){
-
-    todos.push(inputElement);
+    todos.push(inputElement.value);
     inputElement.value = '';
     renderTodos();
     saveToStorage();
